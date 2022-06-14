@@ -12,10 +12,17 @@
         <el-input v-model.trim="formData.title" width="200px"></el-input>
       </el-form-item>
       <el-form-item label="描述">
-        <el-input v-model.trim="formData.desc"></el-input>
+        <el-input
+          v-model.trim="formData.desc"
+          type="textarea"
+          :autosize="{ minRows: 2, maxRows: 4 }"
+        ></el-input>
       </el-form-item>
       <el-form-item label="上传图片">
         <img-uploader v-model="formData.imgList" />
+      </el-form-item>
+      <el-form-item label="详情内容">
+        <RichEditor />
       </el-form-item>
     </el-form>
     <div class="page-content-detail--btns">
@@ -28,10 +35,12 @@
 <script>
 // @ is an alias to /src
 import ImgUploader from "@/components/ImgUploader.vue";
+import RichEditor from "@/components/RichEditor.vue";
 export default {
   name: "Home",
   components: {
     ImgUploader,
+    RichEditor,
   },
   data() {
     return {
@@ -53,7 +62,11 @@ export default {
 .page-content-detail {
   width: 100%;
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
+  &--form {
+    max-height: calc(100vh - 60px);
+    overflow: scroll;
+  }
   &--btns {
     position: absolute;
     bottom: 0;

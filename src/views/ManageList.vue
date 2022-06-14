@@ -22,7 +22,13 @@
       </el-table-column>
       <el-table-column fixed="right" label="操作" width="150">
         <template slot-scope="scope">
-          <el-button type="primary" size="small" plain>编辑</el-button>
+          <el-button
+            type="primary"
+            size="small"
+            plain
+            @click="goDetail(scope.row.id)"
+            >编辑</el-button
+          >
           <el-button
             @click="handleDelete(scope.row.id)"
             type="danger"
