@@ -40,6 +40,6 @@ export default {
 <style lang="less" scoped>
 .menu-bar {
   width: 200px;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
 }
 </style>

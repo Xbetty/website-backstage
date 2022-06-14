@@ -62,9 +62,9 @@ export default {
 .page-content-detail {
   width: 100%;
   position: relative;
-  padding: 20px 20px 60px 20px;
+  padding: 20px 30px 0 20px;
   &--form {
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - 150px);
     overflow: scroll;
   }
   &--btns {

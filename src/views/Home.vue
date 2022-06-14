@@ -23,8 +23,10 @@
           </el-form-item>
           <el-form-item label="展示类型">
             <el-radio-group v-model="module.listType">
-              <el-radio label="1">轮播图</el-radio>
-              <el-radio label="2">图片列表</el-radio>
+              <el-radio label="1">横向轮播图</el-radio>
+              <el-radio label="2">纵向轮播图</el-radio>
+              <el-radio label="3">卡片轮播图</el-radio>
+              <el-radio label="4">图片列表</el-radio>
             </el-radio-group>
           </el-form-item>
           <!-- <el-form-item label="上传图片">
@@ -129,13 +131,12 @@ export default {
 .page-home {
   width: 100%;
   position: relative;
-  padding-bottom: 100px;
   &-form {
     display: flex;
     flex-wrap: wrap;
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 150px);
     overflow: scroll;
-    margin-left: 20px;
+    padding-left: 20px;
     .module {
       flex: 1;
       min-width: 500px;
@@ -158,7 +159,7 @@ export default {
         }
       }
       /deep/.el-input {
-        width: 350px;
+        width: 460px;
       }
     }
   }
