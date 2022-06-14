@@ -1,0 +1,112 @@
+// @import './var.less';
+// * {
+//   box-sizing: border-box;
+// }
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+a {
+  color: @gray10;
+  text-decoration: none;
+}
+
+.we-break-word {
+  word-break: break-all;
+}
+
+.we-ellipsis {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hover-undeline:hover {
+  text-decoration: underline;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.we-text-right {
+  text-align: right;
+}
+
+.we-text-center {
+  text-align: center;
+}
+
+.we-text-danger {
+  color: @red5;
+}
+
+.we-text-info {
+  color: @gray5;
+}
+
+.we-common-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+    width: 4px;
+    background: @blue5;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+}
+
+// #app .icon {
+//   position: absolute;
+//   top: 8px;
+//   left: 31px;
+//   width: 20px;
+//   height: 20px;
+//   color: #92cbf7;
+//   font-size: 23px;
+// }
+
+#app .icon_img {
+  background-image: url('../images/common/icon_img.png');
+  background-size: 100%;
+}
+
+#app .icon_rar {
+  background-image: url('../images/common/icon_rar.png');
+  background-size: 100%;
+}
+
+#app .icon_txt {
+  background-image: url('../images/common/icon_txt.png');
+  background-size: 100%;
+}
+
+#app .icon_doc {
+  background-image: url('../images/common/icon_doc.png');
+  background-size: 100%;
+}
+
+#app .icon_pdf {
+  background-image: url('../images/common/icon_pdf.png');
+  background-size: 100%;
+}
+
+#app .icon_xls {
+  background-image: url('../images/common/icon_xls.png');
+  background-size: 100%;
+}
+
+#app .icon_file_default {
+  background-image: url('../images/common/icon_file_default.png');
+  background-size: 100%;
+}
